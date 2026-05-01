@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淡江大橋車友懶人包 - 跨河騎行指南</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1502675135487-e971002a6adb?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab-btn.active { border-bottom: 4px solid #3b82f6; color: #3b82f6; }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <!-- Header -->
+    <header class="hero-bg h-80 flex items-center justify-center text-white text-center">
+        <div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">淡江大橋：跨河騎行新視野</h1>
+            <p class="text-xl opacity-90">連接淡水與八里的黃金自行車軸線</p>
+        </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="bg-white shadow-md sticky top-0 z-10">
+        <div class="max-w-6xl mx-auto flex">
+            <button onclick="openTab(event, 'tamsui')" class="tab-btn active flex-1 py-4 font-bold text-lg hover:bg-blue-50 transition">
+                <i class="fas fa-anchor mr-2"></i>淡水端 (Tamsui)
+            </button>
+            <button onclick="openTab(event, 'bali')" class="tab-btn flex-1 py-4 font-bold text-lg hover:bg-blue-50 transition">
+                <i class="fas fa-bicycle mr-2"></i>八里端 (Bali)
+            </button>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto p-6">
+        
+        <!-- 淡水端內容 -->
+        <div id="tamsui" class="tab-content active space-y-12">
+            <section>
+                <h2 class="text-3xl font-bold text-gray-800 border-l-8 border-blue-500 pl-4 mb-6">淡水端：金色水岸精華段</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-xl font-bold mb-3"><i class="fas fa-route text-blue-500"></i> 自行車道安排與路線</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            淡水端出口銜接著名的<b>「金色水岸自行車道」</b>。由淡江大橋引道下橋後，往南可直通淡水老街與捷運站；往北則可延伸至沙崙沙灘及漁人碼頭。
+                        </p>
+                        <ul class="mt-4 space-y-2 text-gray-700">
+                            <li><i class="fas fa-check-circle text-green-500 mr-2"></i> <b>熱門路線：</b> 淡江大橋引道 → 沙崙文創園區 → 漁人碼頭 → 滬尾藝文休閒園區。</li>
+                            <li><i class="fas fa-info-circle text-blue-500 mr-2"></i> 車道平緩，適合家庭出遊及長途公路車訓練。</li>
+                        </ul>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Tamsui_Lover%27s_Bridge_20150614.jpg/800px-Tamsui_Lover%27s_Bridge_20150614.jpg" class="rounded-lg shadow-lg" alt="淡水漁人碼頭">
+                </div>
+            </section>
+
+            <section class="bg-blue-50 p-6 rounded-xl">
+                <h3 class="text-xl font-bold mb-4">📍 附近景點與美食</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white p-4 rounded shadow">
+                        <h4 class="font-bold text-blue-600 mb-2">必訪景點</h4>
+                        <p class="text-sm text-gray-600">漁人碼頭情人橋、沙崙海水浴場（看夕陽）、紅毛城、淡水海關碼頭。</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow">
+                        <h4 class="font-bold text-blue-600 mb-2">休息補給</h4>
+                        <p class="text-sm text-gray-600">淡水老街阿給、魚丸湯、海邊咖啡廳。漁人碼頭內有多處便利商店與單車友善友善空間。</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow">
+                        <h4 class="font-bold text-blue-600 mb-2">開車停車點</h4>
+                        <ul class="text-sm text-gray-600">
+                            <li>• 漁人碼頭收費停車場 (車位極多)</li>
+                            <li>• 沙崙路沿線公有停車格</li>
+                            <li>• 淡水油車口停車場</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 八里端內容 -->
+        <div id="bali" class="tab-content space-y-12">
+            <section>
+                <h2 class="text-3xl font-bold text-gray-800 border-l-8 border-green-500 pl-4 mb-6">八里端：左岸人文生態段</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80" class="rounded-lg shadow-lg" alt="八里左岸騎行">
+                    <div>
+                        <h3 class="text-xl font-bold mb-3"><i class="fas fa-route text-green-500"></i> 自行車道安排與路線</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            八里端下橋後直接進入<b>「八里左岸自行車道」</b>，這裡擁有開闊的河濱視野與豐富的紅樹林生態。
+                        </p>
+                        <ul class="mt-4 space-y-2 text-gray-700">
+                            <li><i class="fas fa-check-circle text-green-500 mr-2"></i> <b>熱門路線：</b> 淡江大橋引道 → 十三行文化公園 → 八里左岸公園 → 渡船頭老街。</li>
+                            <li><i class="fas fa-info-circle text-green-500 mr-2"></i> 沿途設有完整的單車休憩站與標示，路面品質優良。</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-green-50 p-6 rounded-xl">
+                <h3 class="text-xl font-bold mb-4">📍 附近景點與美食</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white p-4 rounded shadow">
+                        <h4 class="font-bold text-green-600 mb-2">必訪景點</h4>
+                        <p class="text-sm text-gray-600">十三行博物館、挖子尾自然保留區、八里婚紗廣場、米倉國小。</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow">
+                        <h4 class="font-bold text-green-600 mb-2">休息補給</h4>
+                        <p class="text-sm text-gray-600">八里渡船頭雙胞胎、孔雀蛤、左岸景觀餐廳（適合車友小聚、下午茶）。</p>
+                    </div>
+                    <div class="bg-white p-4 rounded shadow">
+                        <h4 class="font-bold text-green-600 mb-2">開車停車點</h4>
+                        <ul class="text-sm text-gray-600">
+                            <li>• 八里文化公園停車場 (露營區旁)</li>
+                            <li>• 十三行博物館公有停車場</li>
+                            <li>• 八里左岸公園停車場</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="mt-16 text-center text-gray-500 text-sm">
+            <p>※ 淡江大橋預計通車後，將提供行人及自行車專用道，跨河僅需數分鐘。請注意強風及防曬。</p>
+        </section>
+    </main>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>
